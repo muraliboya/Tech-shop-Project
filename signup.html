@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        /* Basic reset for margins and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Style the body and center the container */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: rgb(52, 51, 51);
+        }
+
+        /* Style the container */
+        .container {
+            width: 100%;
+            max-width: 400px;
+            padding-top: 40px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 70px;
+            background-color: black;
+            color: white;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            /* height: 630px; */
+            margin-top: 30px;
+        }
+
+        /* Style the heading */
+        .container h2 {
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        /* Style the form elements */
+        form label {
+            display: block;
+            margin: 15px 0 5px;
+            color: white;
+            font-weight: bold;
+        }
+
+        form input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        form button:hover {
+            background-color: #555;
+        }
+
+        pre {
+            padding-bottom: 20px;
+        }
+
+        .socialmedia a {
+            padding: 5px;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+
+        .socialmedia #facebook {
+            background-color: rgb(98, 98, 206);
+        }
+
+        .socialmedia #google {
+            background-color: orangered;
+        }
+
+        .socialmedia #twitter {
+            background-color: rgb(27, 128, 175);
+        }
+
+        #signin {
+            color: white;
+            background-color: red;
+            border-radius: 4px;
+            margin-top: 20px;
+        }
+
+        #back {
+            text-decoration: none;
+            color: black;
+            background-color: white;
+            position: absolute;
+            top: 530px;
+            left: 120px;
+            border-radius: 5px;
+            text-align: center;
+            padding: 10px;
+        }
+
+        #back:hover {
+            color: white;
+            background-color: green;
+        }
+
+
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+
+            .container {
+                padding: 20px 15px;
+            }
+
+            form label, form input, form button, .socialmedia a {
+                font-size: 14px;
+            }
+
+            form input {
+                padding: 8px;
+            }
+
+            .container h2 {
+                font-size: 1.5rem;
+            }
+
+            #signin {
+                font-size: 14px;
+            }
+
+            .socialmedia a {
+                padding: 5px 8px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Welcome to Tech-Shop</h2>
+    <div class="container">
+        <h2>Signup</h2>
+        <p>Already have an account? <a href="#">Login</a></p>
+        <form>
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required placeholder="Username">
+
+            <label for="Email">Email</label>
+            <input type="email" id="Email" name="Email" required placeholder="Email">
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required placeholder="Password">
+
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" name="confirm-password" required placeholder="Confirm Password">
+
+            <button type="submit">Signup</button>
+            <p style="margin-top: 10px; margin-bottom: 10px; font-size: 1rem; margin-bottom: 20px;">___________Or Login With__________</p>
+            <div class="socialmedia">
+                <a href="#" id="facebook">Facebook</a>&emsp;
+                <a href="#" id="google">Google</a>&emsp;
+                <a href="#" id="twitter">Twitter</a>
+            </div>
+            <button type="submit" id="signin">Sign In</button>
+        </form>
+    </div>
+
+
+
+</body>
+
+</html>
